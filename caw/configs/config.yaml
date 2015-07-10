@@ -25,6 +25,10 @@ screen_widths:
 #Type page URL paths below, here are a couple of examples
 paths:
   home: /caw/
+  benefits: /caw/benefits-rewards
+  learn-grow: /caw/learn-grow
+  manage: /caw/manage-lead
+  connect: /caw/connect
 
 #Amount of fuzz ImageMagick will use
 fuzz: '40%'
