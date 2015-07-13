@@ -1,0 +1,51 @@
+#Headless browser option
+browser:
+  phantomjs: "phantomjs"
+  # slimerjs: "slimerjs"
+
+#If you want to have multiple snapping files, set the file name here
+snap_file: "../snap.js"
+
+# Type the name of the directory that shots will be stored in
+directory: 'shots'
+
+# Add only 2 domains, key will act as a label
+domains:
+  prod: "https://statistics.stanford.edu"
+  uat: "https://statistics-uat.stanford.edu"
+
+# The breakpoints for OFW (where it actually changes) are 1200, 978, 768, 481, 321.
+# BUT you want your screenshots to be slightly wider than that to ensure you are seeing
+# the design in effect ABOVE the breakpoint where it changes.
+# So, I would suggest adding ~50px to each breakpoint
+screen_widths:
+  - 1250
+  - 1028
+  - 818
+  - 531
+  - 371
+
+#Type page URL paths below, here are a couple of examples
+paths:
+  home: /
+  news: /news
+  faculty: /people/faculty
+  academics: /academics/academic-programs-overview
+  iap: /iap/members
+  tech-reports: /resources/technical-reports
+  about: /about/welcome
+
+#Amount of fuzz ImageMagick will use
+fuzz: '40%'
+
+#Set the number of days to keep the site spider file
+spider_days:
+  - 2
+
+#Choose how results are displayed, by default alphanumeric. Different screen widths are always grouped.
+#alphanumeric - all paths (with, and without, a difference) are shown, sorted by path
+#diffs_first - all paths (with, and without, a difference) are shown, sorted by difference size (largest first)
+#diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+mode: diffs_only
+
+threshold: 5
