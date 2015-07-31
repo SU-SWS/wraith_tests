@@ -8,11 +8,11 @@ snap_file: "javascript/snap.js"
 
 # Type the name of the directory that shots will be stored in
 directory: 'shots'
+history_dir: 'shots_history'
 
 # Add only 2 domains, key will act as a label
 domains:
-  prod: "https://sites.stanford.edu/caw"
-  uat: "https://caw.stanford.edu"
+  prod: "https://sites.stanford.edu"
 
 #Type screen widths below, here are a couple of examples
 screen_widths:
@@ -24,11 +24,11 @@ screen_widths:
 
 #Type page URL paths below, here are a couple of examples
 paths:
-  home: /
-  benefits: /benefits-rewards
-  learn-grow: /learn-grow
-  manage: /manage-lead
-  connect: /connect
+  home: /caw/
+  benefits: /caw/benefits-rewards
+  learn-grow: /caw/learn-grow
+  manage: /caw/manage-lead
+  connect: /caw/connect
 
 #Amount of fuzz ImageMagick will use
 fuzz: '40%'
