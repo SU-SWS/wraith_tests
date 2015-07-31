@@ -26,7 +26,6 @@ screen_widths:
 paths:
   home: /
 
-
 #Amount of fuzz ImageMagick will use
 fuzz: '40%'
 
