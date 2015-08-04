@@ -4,7 +4,7 @@ browser:
   # slimerjs: "slimerjs"
 
 #If you want to have multiple snapping files, set the file name here
-snap_file: "javascript/snap.js"
+snap_file: "../snap.js"
 
 # Type the name of the directory that shots will be stored in
 directory: 'shots'
@@ -12,7 +12,7 @@ directory: 'shots'
 # Add only 2 domains, key will act as a label
 domains:
   prod: "https://sites.stanford.edu/caw"
-  uat: "https://caw.stanford.edu"
+  anchorage: "https://caw.stanford.edu"
 
 #Type screen widths below, here are a couple of examples
 screen_widths:
