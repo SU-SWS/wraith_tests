@@ -30,7 +30,7 @@ paths:
   category: /category
   about: /about
   vacations: /chapter-2/subchapter-1/policy-2-1-6
-  print: /print-policies
+#  print: /print-policies
 
 #Amount of fuzz ImageMagick will use
 fuzz: '40%'
