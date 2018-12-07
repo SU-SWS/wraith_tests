@@ -13,7 +13,7 @@ directory: 'shots'
 # Add only 2 domains, key will act as a label
 domains:
   prod: "https://gradadmissions.stanford.edu"
-  dev: "https://gradadmissions.sites.stanford.edu"
+  acsf: "https://gradadmissions.sites.stanford.edu"
 
 #Type screen widths below, here are a couple of examples
 screen_widths:

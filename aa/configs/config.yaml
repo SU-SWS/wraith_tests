@@ -12,8 +12,8 @@ directory: 'shots'
 
 # Add only 2 domains, key will act as a label
 domains:
-  prod: "https://haas.stanford.edu"
-  acsf: "https://haas.sites.stanford.edu"
+  prod: "https://aa.stanford.edu"
+  acsf: "https://aa.sites.stanford.edu"
 
 #Type screen widths below, here are a couple of examples
 screen_widths:
@@ -24,11 +24,14 @@ screen_widths:
 #Type page URL paths below, here are a couple of examples
 paths:
   home: /
-  students: /students
-  faculty: /faculty
-  community: /community
-  alumni: /alumni
-  about: /about
+  admissions: /admissions
+  academics: /academics
+  people: /people/faculty/grid
+  research: /research
+  news: /news
+  student-resources: /student-resources
+  about: /about/welcome
+  affiliates-program: /industrial-affiliates-program
 
 #Amount of fuzz ImageMagick will use
 fuzz: '40%'
