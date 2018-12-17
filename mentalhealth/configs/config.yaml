@@ -1,0 +1,45 @@
+#Headless browser option
+browser:
+  phantomjs: "phantomjs"
+  # slimerjs: "slimerjs"
+  # casperjs: "casperjs"
+
+#If you want to have multiple snapping files, set the file name here
+snap_file: "../snap.js"
+
+# Type the name of the directory that shots will be stored in
+directory: 'shots'
+
+# Add only 2 domains, key will act as a label
+domains:
+  prod: "https://mentalhealth.stanford.edu"
+  acsf: "https://mentalhealth.sites.stanford.edu"
+
+#Type screen widths below, here are a couple of examples
+screen_widths:
+#  - 640
+#  - 768
+  - 1920
+
+#Type page URL paths below, here are a couple of examples
+paths:
+  home: /
+  resources: /resources
+  sexual-assault: /resources?field_resource_confidential_value=All&field_resource_type_tid=All&field_resource_issue_area_tid=147&field_resource_individs_served_tid=All
+
+#Amount of fuzz ImageMagick will use
+fuzz: '40%'
+
+#Set the number of days to keep the site spider file
+spider_days:
+  - 2
+
+#Choose how results are displayed, by default alphanumeric. Different screen widths are always grouped.
+#alphanumeric - all paths (with, and without, a difference) are shown, sorted by path
+#diffs_first - all paths (with, and without, a difference) are shown, sorted by difference size (largest first)
+#diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+mode: diffs_first
+
+threshold: 5
+
+phantomjs_options: '--ignore-ssl-errors=true'
