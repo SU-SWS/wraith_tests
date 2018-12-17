@@ -17,8 +17,8 @@ domains:
 
 #Type screen widths below, here are a couple of examples
 screen_widths:
-  - 640
-  - 768
+#  - 640
+#  - 768
   - 1920
 
 #Type page URL paths below, here are a couple of examples
