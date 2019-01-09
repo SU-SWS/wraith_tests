@@ -5,15 +5,15 @@ browser:
   # casperjs: "casperjs"
 
 #If you want to have multiple snapping files, set the file name here
-snap_file: "../snap.js"
+snap_file: "../../snap.js"
 
 # Type the name of the directory that shots will be stored in
 directory: 'shots'
 
 # Add only 2 domains, key will act as a label
 domains:
-  prod: "https://gradadmissions.stanford.edu"
-  acsf: "https://gradadmissions.sites.stanford.edu"
+  prod: "https://communitystandards.stanford.edu"
+  acsf: "https://communitystandards.sites.stanford.edu"
 
 #Type screen widths below, here are a couple of examples
 screen_widths:
@@ -24,11 +24,10 @@ screen_widths:
 #Type page URL paths below, here are a couple of examples
 paths:
   home: /
-  hcp: /programs/hcp
-  degrees: /degrees
-  applying: /applying
-  admitted-students: /admitted-students
-  about: /about
+  policies-and-guidance: /policies-and-guidance
+  student-accountability-process: /student-accountability-process
+  who-we-are: /who-we-are
+  resources: /resources
 
 #Amount of fuzz ImageMagick will use
 fuzz: '40%'
@@ -46,3 +45,7 @@ mode: diffs_first
 threshold: 5
 
 phantomjs_options: '--ignore-ssl-errors=true'
+
+
+before_capture: "../../timeout.js"
+

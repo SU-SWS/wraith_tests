@@ -29,6 +29,12 @@ See "Other Resources" below for more in-depth installation instructions.
 3. `open shots/gallery.html`
 4. Review the screenshots in `gallery.html` for differences
 
+Note: If you want to increase the timeout, add the following line to your `config.yaml` file:
+
+```
+before_capture: "../../timeout.js"
+```
+
 ### Running Visual Regression Tests of a Site Against A Historical Baseline
 
 1. `cd myproject`

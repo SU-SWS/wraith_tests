@@ -1,3 +1,5 @@
 # ignore output
 shots
 shots_history
+# Ignore Apache files
+.htaccess
