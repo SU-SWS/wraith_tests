@@ -4,17 +4,20 @@ browser:
   # slimerjs: "slimerjs"
 
 #If you want to have multiple snapping files, set the file name here
-snap_file: "../snap.js"
+snap_file: "javascript/snap.js"
 
 # Type the name of the directory that shots will be stored in
 directory: 'shots'
 
 # Add only 2 domains, key will act as a label
 domains:
-  prod: "https://cardinalatwork.stanford.edu"
-  acquia: "https://cardinalatwork-prod.stanford.edu"
+  prod: "https://edeq.stanford.edu"
+  dev: "https://spencer-dev.sites-pro.stanford.edu"
 
-#Type screen widths below, here are a couple of examples
+# The breakpoints for OFW (where it actually changes) are 1200, 978, 768, 481, 321.
+# BUT you want your screenshots to be slightly wider than that to ensure you are seeing
+# the design in effect ABOVE the breakpoint where it changes.
+# So, I would suggest adding ~50px to each breakpoint
 screen_widths:
 #  - 320
 #  - 600
@@ -25,10 +28,10 @@ screen_widths:
 #Type page URL paths below, here are a couple of examples
 paths:
   home: /
-  benefits: /benefits-rewards
-  learn-grow: /learn-grow
-  manage: /manage-lead
-  connect: /connect
+  overview: /about/overview
+  intro: /sections/equality-opportunity-introduction
+  section-3: /sections/section-three-equality-opportunity-and-education
+  school-choice: /sections/private-school-and-school-choice
 
 #Amount of fuzz ImageMagick will use
 fuzz: '40%'

@@ -4,31 +4,32 @@ browser:
   # slimerjs: "slimerjs"
 
 #If you want to have multiple snapping files, set the file name here
-snap_file: "../snap.js"
+snap_file: "javascript/snap.js"
 
 # Type the name of the directory that shots will be stored in
 directory: 'shots'
 
 # Add only 2 domains, key will act as a label
 domains:
-  prod: "https://cardinalatwork.stanford.edu"
-  acquia: "https://cardinalatwork-prod.stanford.edu"
+  prod: "https://vpge.stanford.edu"
+  dev: "https://vpge-dev.sites-pro.stanford.edu"
 
 #Type screen widths below, here are a couple of examples
 screen_widths:
-#  - 320
-#  - 600
-#  - 768
-#  - 1024
-  - 1280
+  - 1250
+#  - 1028
+#  - 818
+#  - 531
+#  - 371
 
 #Type page URL paths below, here are a couple of examples
 paths:
   home: /
-  benefits: /benefits-rewards
-  learn-grow: /learn-grow
-  manage: /manage-lead
-  connect: /connect
+  academic-guidance: /academic-guidance/overview
+  diversity: /diversity-initiatives/overview
+  prof-dev: /professional-development/overview
+  interdisc: /interdisciplinary-learning/overview
+  fellowships: /fellowships-funding/overview
 
 #Amount of fuzz ImageMagick will use
 fuzz: '40%'
